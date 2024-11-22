@@ -29,6 +29,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  height: 100vh;
 
   /*background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
   tbm da pra fazer dessa forma*/
@@ -40,7 +41,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 500px;
   /*height: 712px;*/
   margin: 56px auto 0px;
   padding: O 24px;
@@ -83,7 +85,7 @@ body * {
   transform: translateY(-50%);
 }
 
-.light #switch button{
+.light #switch button {
   right: 0;
   left: initial;
 }
@@ -160,4 +162,15 @@ footer {
   padding: 12px 0;
   text-align: center;
   font-size: 15px;
+}
+
+/*media queries*/
+@media(min-width:700px){
+  :root{
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light{
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
