@@ -17,15 +17,19 @@ function toggleLanguage() {
   if (isEnglish) {
     img.setAttribute("alt", "Profile picture of Lucas Rangel")
     profileText.textContent = "@lucasrangel_01"
+    links[0].setAttribute("href", "./aboutme.html")
     links[0].textContent = "About Me"
     links[1].textContent = "View My Portfolio"
+    links[1].setAttribute("href", "https://rangelfilms.myportfolio.com/")
     links[2].textContent = "Contact"
     footer.innerHTML = `Made by <a href="mailto:richard.junior1601@hotmail.com">Richard Junior</a>`
   } else {
     img.setAttribute("alt", "Foto de perfil de Lucas Rangel")
     profileText.textContent = "@lucasrangel_01"
     links[0].textContent = "Sobre mim"
+    links[0].setAttribute("href", "./sobremim.html")
     links[1].textContent = "Ver meu portifólio"
+    links[1].setAttribute("href", "https://rangelfilmes.myportfolio.com/")
     links[2].textContent = "Contato"
     footer.innerHTML = `Feito por <a href="mailto:richard.junior1601@hotmail.com">Richard Junior</a>`
   }

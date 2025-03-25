@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Cheddar Gothic Sans";
+  src: url("./fonts/CheddarGothicSansTwo-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("./fonts/BebasNeueRegular.woff2") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  background-color: #222222;
+}
+
+h1 {
+  font-family: "Cheddar Gothic Sans", sans-serif;
+  text-align: center;
+  color: #bec9c3;
+  margin-bottom: 20px;
+}
+
+ul {
+  font-family: "Bebas Neue", sans-serif;
+  list-style-type: none;
+  text-align: justify;
+  color: #525252;
+}
+
+li {
+  margin: 20px 0;
+}
+
+li.last {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .image-content img {
+    height: 50vh;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
